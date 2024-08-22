@@ -8,4 +8,54 @@
   background-color: #242424;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+h1 {
+  text-align: center;
+}
+
+.divSpan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 2px;
+  align-items: center;
+}
+
+
+.divSpan > span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  font-weight: bold;
+  transition: .5s ease;
+}
+
+.start, .reset {
+  background-color: #3a89ff;
+}
+
+.start:hover,
+.reset:hover {
+  background: transparent;
+}
+
+.divbtn {
+  display: flex;
+  gap: 10px; 
+}
+
+.stop {
+  background-color: #131e2f;
+}

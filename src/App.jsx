@@ -20,17 +20,17 @@ function App() {
   return (
     <>
       <h1>Timer</h1>
-      <div>
+      <div className="divSpan">
         <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
         <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
         <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
       </div>
-      <div>
+      <div className="divbtn">
         {iniciando ? 
-        (<button onClick={() => { setIniciar(false) }}>Parar</button>) :
-        (<button onClick={() => { setIniciar(true) }}>Iniciar</button>) 
+        (<button className="btn stop" onClick={() => { setIniciar(false) }}>Parar</button>) :
+        (<button className="btn start" onClick={() => { setIniciar(true) }}>Iniciar</button>) 
         }
-        <button onClick={() => { setTime(0) }}>Reiniciar</button>
+        <button className="btn reset" onClick={() => { setTime(0) }}>Reiniciar</button>
       </div>
     </>
   );
